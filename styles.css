@@ -390,6 +390,8 @@ h2 span {
         -moz-appearance: none;
         text-indent: 1px;
         text-overflow: '';
+        padding-left: 5%;
+        padding-right: 5%;
     }
     
     .button-container2 {
