@@ -75,7 +75,9 @@ const calculate = () => {
         if(checkReq == false &&
             checkReq1 == false &&
             inputKpi.age > 14  &&
-            inputKpi.wgt > 34
+            inputKpi.wgt > 34 &&
+            inputKpi.age < 120 &&
+            inputKpi.wgt < 250
              ) {
              if(inputCheck.gender == 1) {
                  let womenCalc = ((10 * inputKpi.wgt) + (6.25 * inputKpi.hgt) - (5 * inputKpi.age) - 161)
@@ -122,11 +124,13 @@ const calculate = () => {
          ) {
              errorMeasage.innerHTML = 'All fields are required'
          } else if (
-             inputKpi.age < 15
+             inputKpi.age < 15 ||
+             inputKpi.age > 120 
          ) {
              errorMeasage.innerHTML = 'Age: please provide a value between 15 - 120'
          } else if (
-             inputKpi.wgt < 35
+             inputKpi.wgt < 35 ||
+             inputKpi.wgt > 250
          ) {
              errorMeasage.innerHTML = 'Weight: please provide a value between 35 - 250'
          }        
