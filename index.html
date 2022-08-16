@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caloric Intake Needs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js" ></script>
+</head>
+<body>
+    <div class="container1">
+        <h1 class="title-container1 noselect">Caloric Intake Needs Calculator</h1>
+        <div class="container1-button">
+            <button class="start" >START
+            </button>
+        </div>
+    </div>
+    
+    <div class="container2">
+
+<div class="image">
+    <img draggable="false" src="https://images.vexels.com/media/users/3/199335/isolated/preview/8a94f45d941febf78f272213c70138bd-cute-brain-yoga-cartoon.png" alt="yoga image">
+</div>
+
+        <form class="input-container" action="">
+
+            <p class="error"></p>
+
+                <input 
+                 class="age-input"
+                 type="number"
+                 pattern="0-9"
+                 placeholder="Enter your Age"
+                 min="15"
+                 max="120"
+                 required 
+                />
+
+                <input 
+                 class="wgt-input"
+                 type="number"
+                 pattern="0-9"
+                 placeholder="Weight in kg"
+                 min="35"
+                 max="250"
+                 required 
+                />
+
+                <input 
+                class="hgt-input"
+                type="number"
+                pattern="0-9"
+                placeholder="Height in cm"
+                min="18"
+                max="250"
+                required 
+               />
+
+              <select class="selectActivity" name="activity">
+                 <option class="option"  disabled selected value="0">Select an option</option>
+                 <option class="option" value="1.2">Sedentary: little or no exercise</option>
+                 <option class="option" value="1.375">Light: exercise 1-3 times/week</option>
+                 <option class="option" value="1.465">Moderate: exercise 4-5 times/week</option>
+                 <option class="option" value="1.55">Active: daily exercise or intense exercise 3-4 times/week</option>
+                 <option class="option" value="1.725">Very Active: intense exercise 6-7 times/week</option>
+                 <option class="option" value="1.9">Extra Active: very intense exercise daily, or physical job</option>
+               </select>
+
+               <select class="selectGender" name="gender">
+                <option class="option"  disabled selected value="0">Select an option</option>
+                <option class="option" value="1">Female</option>
+                <option class="option" value="2">Male</option>
+            </select>
+
+               <div class="result">
+
+             <div class="maintain-w">
+                <h2>Maintain weight: </h2> <hr>
+                <h2><span class="maintain"></span> &nbsp 100% calories/day</h2>
+            </div>
+
+            <div class="mild-w">
+                <h2>Mild weight loss(0.25kg / week): </h2> <hr>
+                <h2><span class="mild"></span> &nbsp 90% calories/day</h2>
+            </div>
+
+            <div class="loss-w">
+                <h2>Weight loss(0.5kg / week): </h2> <hr>
+                <h2><span class="loss"></span> &nbsp 79% calories/day</h2>
+            </div>
+
+            <div class="extreme-w">
+                <h2>Extreme weight loss(1kg / week): </h2> <hr>
+                <h2><span class="extreme"></span> &nbsp 59% calories/day</h2>
+            </div>
+
+            <div class="doc">
+                <p>Please consult with a doctor when losing 1 kg or more per week since it requires that you consume less than the minimum recommendation of 1.500 calories a day.</p>
+            </div>
+
+            </div>
+        </form>
+
+        <div class="button-container2">
+            <button class="calculate">
+                CALCULATE
+            </button>
+        </div>
+
+    </div>
+</body>
+</html>
