@@ -464,6 +464,10 @@ h2 span {
     .result p {
         font-size: 2.5vmin;
     }
+
+    p {
+        text-align: center;
+    }
     
     .doc {
         width: 80%;
